@@ -25,7 +25,7 @@ def decode_caesar_cipher(text: str, shift: int) -> str:
             # для строчных букв
             new_elem = chr((ord(elem) - ord('a') - shift) % 26 + ord('a'))
             decoded.append(new_elem)
-        elif 'A' <= char <= 'Z':
+        elif 'A' <= elem <= 'Z':
             # для заглавных букв
             new_elem = chr((ord(elem) - ord('A') - shift) % 26 + ord('A'))
             decoded.append(new_elem)
